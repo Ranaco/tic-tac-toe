@@ -198,3 +198,50 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
+
+// class HomePage extends StatefulWidget {
+//   const HomePage({Key? key}) : super(key: key);
+
+//   @override
+//   _HomePageState createState() => _HomePageState();
+// }
+
+// class _HomePageState extends State<HomePage> {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: Text('demo'),
+//         backgroundColor: Colors.amber,
+//       ),
+//       body: Center(
+//           child: Column(
+//         mainAxisAlignment: MainAxisAlignment.center,
+//         children: <Widget>[
+//           Expanded(
+//             child: GridView.builder(
+//                 scrollDirection: Axis.horizontal,
+//                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+//                   crossAxisCount: 3,
+//                   crossAxisSpacing: 3,
+//                   mainAxisSpacing: 3,
+//                 ),
+//                 itemCount: 102,
+//                 itemBuilder: (context, index) => GestureDetector(
+//                       onDoubleTap: () {
+//                         print(' $index hello world');
+//                       },
+//                       onLongPress: () {
+//                         print('$index what the problem');
+//                       },
+//                       child: Container(
+//                         child: Center(child: Text('$index')),
+//                         color: Colors.blue,
+//                       ),
+//                     )),
+//           )
+//         ],
+//       )),
+//     );
+//   }
+// }
