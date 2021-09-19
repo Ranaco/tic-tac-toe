@@ -53,16 +53,16 @@ class _HomePageState extends State<HomePage> {
   resetGame() {
     setState(() {
       /*this.*/ gameState = [
-        "empty"
-            "empty"
-            "empty"
-            "empty"
-            "empty"
-            "empty"
-            "empty"
-            "empty"
-            "empty"
-            "empty"
+        "empty",
+        "empty",
+        "empty",
+        "empty",
+        "empty",
+        "empty",
+        "empty",
+        "empty",
+        "empty",
+        "empty",
       ];
       /*this.*/ message = "";
     });
@@ -79,11 +79,6 @@ class _HomePageState extends State<HomePage> {
       case ('circle'):
         return circle;
         break;
-        defalut:
-        {
-          return cross;
-          break;
-        }
     }
   }
 
